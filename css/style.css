@@ -2,14 +2,17 @@
     font-family: 'Raleway';
     src: url('/fonts/Raleway/static/Raleway-ExtraLight.ttf');
 }
+
 * {
     box-sizing: border-box;
     font-family: 'Raleway';
 }
+
 body {
     margin: 0;
     background-color: #f0f0f0;
 }
+
 .header {
     justify-content: space-between;
     align-items: flex-start;
@@ -22,13 +25,15 @@ body {
     width: 100%;
     right: 0;
 }
-.header nav{
+
+.header nav {
     display: flex;
     justify-content: center;
     align-items: right;
     gap: 20px;
     margin-right: 17vw;
 }
+
 .header nav a {
     color: #e6cf03;
     text-decoration: none;
@@ -38,53 +43,63 @@ body {
     transition: 0.3s ease-in-out;
     border-radius: 10px;
 }
+
 .header nav .submenu {
     display: none;
     text-decoration: none;
-    
+    padding: 10px 15px;
     background-color: #e6cf03;
     text-decoration: none;
     font-size: 12px;
     font-weight: 650;
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
     border-radius: 10px;
     list-style: none;
 }
+
 .header nav .submenu li a {
     color: #333;
     text-decoration: none;
     display: block;
     padding: 8px 12px;
 }
-.header nav a:hover + .submenu{
+
+.header nav a:hover+.submenu {
     display: block;
     position: absolute;
     margin-top: 35px;
     padding: 10px;
     border-radius: 10px;
 }
+
 .header nav .submenu li a:hover {
     color: #333;
     background-color: #ffe500;
 }
+
 .header nav a:hover {
     color: #333;
     background-color: #ffe500;
 }
-.header img{
+
+.header img {
     padding-left: 19vw;
     height: 35px;
     width: auto;
 }
-#Home{
+
+#Home {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     position: relative;
+    width: 100%;
+    height: auto;
 }
-#Home .background img{
+
+#Home .background img {
     width: 100%;
     height: auto;
     position: absolute;
@@ -93,14 +108,17 @@ body {
     left: 0;
     z-index: -1;
 }
+
 #Home .home-content {
     color: white;
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: center;
     margin-top: 40vh;
 }
+
 #Home .home-content h1 {
     font-size: 14px;
     margin: 0;
@@ -109,6 +127,7 @@ body {
     text-align: center;
 
 }
+
 #Home .home-content h2 {
     font-size: 8px;
     font-weight: 0;
@@ -117,7 +136,8 @@ body {
     padding-left: 30px;
     text-align: center;
 }
-#Home .home-content a{
+
+#Home .home-content a {
     text-decoration: none;
     color: #333;
     background-color: #ffe500;
@@ -129,45 +149,46 @@ body {
 }
 
 #Home .arrow,
-.arrow:before{
-  position: absolute;
-  left: 50%;
+.arrow:before {
+    position: absolute;
+    left: 50%;
 }
 
-.arrow{
-  width: 40px;
-  height: 40px;
-  bottom: 20px;
-  margin-left: -20px;
-  border-left: none;
-  border-top: none;
-  border-right: 2px #fff solid;
-  border-bottom: 2px #fff solid;
-  transform: rotate(45deg);
-  top: 83vh;
- }
+.arrow {
+    width: 20px;
+    height: 20px;
+    bottom: 0px;
+    margin-left: -20px;
+    border-left: none;
+    border-top: none;
+    border-right: 2px #fff solid;
+    border-bottom: 2px #fff solid;
+    transform: rotate(45deg);
+    top: 47rem;
+}
 
-  
-.arrow:before{
-  content: '';
-  width: 20px;
-  height: 20px;
-  top: 50%;
-  margin: -10px 0 0 -10px;
-  border-left: none;
-  border-top: none;
-  border-right: 1px #fff solid;
-  border-bottom: 1px #fff solid;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-name: arrow;
+.arrow:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+    border-left: none;
+    border-top: none;
+    border-right: 1px #fff solid;
+    border-bottom: 1px #fff solid;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: arrow;
 }
-@keyframes arrow
-{
-  0%{
-    opacity: 1}
-  100%{
-    opacity: 0;
-    transform: translate(-10px, -10px);
-}
+
+@keyframes arrow {
+    0% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-10px, -10px);
+    }
 }

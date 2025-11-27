@@ -29,7 +29,7 @@ body {
 .header nav {
     display: flex;
     justify-content: center;
-    align-items: right;
+    align-items: center;
     gap: 20px;
     margin-right: 17vw;
 }
@@ -40,44 +40,65 @@ body {
     font-size: 12px;
     padding: 10px 15px;
     font-weight: 650;
-    transition: 0.3s ease-in-out;
+    transition: background-color 0.2s ease, color 0.2s ease;
     border-radius: 10px;
+}
+
+.header nav .nav-item-with-submenu {
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .header nav .submenu {
     display: none;
-    text-decoration: none;
-    padding: 10px 15px;
-    background-color: #e6cf03;
-    text-decoration: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffe500;
     font-size: 12px;
     font-weight: 650;
-    transition: 0.5s ease-in-out;
-    border-radius: 10px;
+    border-radius: 0;
     list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 0;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.header nav .submenu li {
+    margin: 0;
+    padding: 0;
 }
 
 .header nav .submenu li a {
     color: #333;
     text-decoration: none;
     display: block;
-    padding: 8px 12px;
+    padding: 15px 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    border-radius: 0;
 }
 
-.header nav a:hover+.submenu {
+.header nav .nav-item-with-submenu:hover .submenu {
     display: block;
-    position: absolute;
-    margin-top: 35px;
-    padding: 10px;
-    border-radius: 10px;
 }
 
 .header nav .submenu li a:hover {
+    background-color: #d4b800;
+    border-radius: 0;
+}
+
+.header nav a:hover {
     color: #333;
     background-color: #ffe500;
 }
 
-.header nav a:hover {
+.header nav .nav-item-with-submenu:hover #link-about {
     color: #333;
     background-color: #ffe500;
 }

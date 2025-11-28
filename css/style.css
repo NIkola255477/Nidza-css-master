@@ -580,8 +580,9 @@ body {
     padding: 20px 35px;
     z-index: 3;
     text-align: center;
-    width: 200px;
-    height: 90%;
+    width: 90%;
+    height: 40%;
+    position: absolute;
 }
 #Portfolio .gallery .doe .normal h1{
     font-size: 10px;

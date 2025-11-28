@@ -13,6 +13,11 @@
     src: url('/fonts/Montserrat/static/Montserrat-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'Raleway-b';
+    src: url('/fonts/Raleway/static/Raleway-ExtraBold.ttf');
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Raleway';
@@ -633,10 +638,205 @@ body {
     font-weight: 700;
     letter-spacing: 3px;
     margin-top: 70px;
+    margin-bottom: 70px;
     display: inline-block;
     transition: 0.3s ease-in-out;
 }
 
 #Portfolio .portfolio-content a:hover {
     background-color: #d4b800;
+}
+
+#Portfolio .portfolio-content .bottom {
+    background-image: url('/Assets/skyline.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+}
+
+#Portfolio .portfolio-content .bottom a {
+    text-decoration: none;
+    z-index: 2;
+    color: #e6cf03;
+    background-color: transparent;
+    font-size: 15px;
+    padding: 20px 30px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    margin-top: 130px;
+    border: #e6cf03 solid 2px;
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+
+#Portfolio .portfolio-content .bottom a:hover {
+    background-color: #e6cf03;
+    color: #333;
+}
+
+#Our-Team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: white;
+    width: 100vw;
+    text-align: center;
+}
+
+#Our-Team .team-content .top img {
+    margin-bottom: 10px;
+    height: 60%;
+}
+
+#Our-Team .team-content .top h1 {
+    margin-bottom: 30px;
+    font-size: 17px;
+    color: #000;
+    letter-spacing: 8px;
+    font-weight: bold;
+}
+
+#Our-Team .team-content .top p {
+    font-size: 15px;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+}
+
+#Our-Team .team-content .cards-team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+#Our-Team .team-content .cards-team .card-member {
+    background-color: white;
+    -webkit-box-shadow: 2px 5px 24px -11px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 2px 5px 24px -11px rgba(0, 0, 0, 1);
+    box-shadow: 2px 5px 24px -11px rgba(0, 0, 0, 1);
+    width: 220px;
+    text-align: center;
+    height: 420px;
+}
+
+#Our-Team .team-content .cards-team .card-member .img {
+    position: relative;
+    overflow: visible;
+}
+
+#Our-Team .team-content .cards-team .card-member .img img {
+    width: 100%;
+    z-index: 1;
+    display: block;
+    filter: brightness(0.7);
+}
+
+#Our-Team .team-content .cards-team .card-member .img h1 {
+    font-size: 15px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: -40px;
+    background-color: rgba(212, 155, 0, 0.6);
+    z-index: 2;
+    padding: 10px 0;
+    position: relative;
+}
+
+#Our-Team .team-content .cards-team .card-member .txt {
+    margin-top: 20px;
+    color: #000;
+    font-weight: bold;
+    width: 210px;
+    text-align: center;
+    background-image: url('/Assets/axes-icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 10px;
+}
+
+#Our-Team .team-content .quotes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    background-color: white;
+    width: 100vw;
+    text-align: center;
+    gap: 30px;
+    position: relative;
+}
+
+#Our-Team .team-content .quotes-container::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 200px;
+    background-color: orange;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+#Our-Team .team-content .quotes-container .quote {
+    width: 465px;
+    position: relative;
+    z-index: 1;
+}
+
+#Our-Team .team-content .quotes-container .quote .text {
+    background-color: #000;
+    color: white;
+    height: auto;
+    width: 100%;
+    text-align: left;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Our-Team .team-content .quotes-container .quote .text p {
+    font-size: 12px;
+}
+
+#Our-Team .team-content .quotes-container .quote .q {
+    align-self: right;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #000;
+    font-weight: 600;
+    position: relative;
+    top: 30px;
+}
+
+#Our-Team .team-content .quotes-container .quote .q p {
+    margin-bottom: 0px;
+    padding: 0;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+#Our-Team .team-content .quotes-container .quote .q h2 {
+    margin: 5px 0 0 0;
+    font-size: 11px;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: left;
+    padding-left: 60px;
+    color: #000;
+    font-family: 'Raleway-b';
+    margin-bottom: 50px;
+}
+
+#Our-Team .team-content .quotes-container .quote img {
+    width: auto;
+    height: 300px;
+    filter: brightness(0.6);
 }
